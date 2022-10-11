@@ -1,30 +1,58 @@
 <html>
 <head>
-  <style>
-    h1 {
-        text-align:center;}
+
+ <style>
+
+    h1{
+        text-align:center;
+     }
     #input {
-        border-radius:10px;
-        height:50px;
-        weidth:200px;
+	  left-margin:30px;
+	  padding: 10px;
+        border-radius:30px;
+        height:40px;
+        width:500px;
     }
+	
+	div {
+	text-align:center;
+	}
+
+	.links {
+	text-align: right;
+}
+
     #search {
+	  text-align:center;
         border-radius:10px;
-        height:50px;
-        weidth:50px;
+        height:30px;
+        width:80px;
     }
-    
-  </style>
-  </head>
-  
+	a {
+	text-align:right;
+	padding: 0px 20px 0px 0px;
+	margin: 0px 0px 0px 0px;
+	}
+
+</style>
+</head>
+
 <body>
-  
-<H1>Google Search</H1>
-<form action= "https://www.google.com/search">
-  <input type= "text" id= "input" placeholder= "Search Google" name= "q"><br><br>
-  <input type= "submit" id= "search" value="Search">
+<H1 text-align= right>Google Search</H1>
+
+<div text-align="right" class="links">
+<a href="">Image Search</a>
+<a href="">Advanced Search</a>
+</div>
+
+<form action= "https://www.google.com/images"><br><br><br><br><br>
+<div>
+  <input type= "text" placeholder= "Search Google" id="input" name= "q">
+<br><br>
+  <input type= "submit" id ="search" value="Search"></div>
 </form>
-  
+
 </Body>
 </Html>
+
 
