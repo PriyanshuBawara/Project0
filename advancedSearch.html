@@ -3,14 +3,44 @@
 <Meta name="viewport" content="width=device-width , initial-scale=1.0">
  <style>
 
-    h1{
-        text-align:center;
-  
+  h1{
+    text-align:center;
+      }
+
 	a {
 	text-align:right;
 	padding: 0px 20px 0px 0px;
 	margin: 0px 0px 0px 0px;
 	}
+
+  .links {
+    float: right;
+  }
+
+  div {
+    float: left;
+  }
+
+  #search {
+    color:white;
+    height:30px;
+    border-radius:1px;
+    float:right;
+    background-color:deepskyblue;
+  }
+
+  #ïnputfeilds {
+    float: left;
+    margin-top:-7px;
+    margin-left: 20px;
+  }
+
+  .input {
+    height:25px;
+    width:400px;
+    margin-bottom:12px;
+}
+
 
 </style>
 </head>
@@ -19,22 +49,31 @@
 <H1 text-align= right>Google Advanced Search</H1>
 
 <div text-align="right" class="links">
-  <a href="">Home</a>
+  <a href="index.html">Home</a>
+</div><br><br>
+  
+ <h3>Find Pages With...</h3>
+  
+<div> 
+<p>all these words:</p>
+<p>this exact word or phrase:</p>
+<p>any of these words:</p>
+<p>none of these words:</p>
 </div>
-  
-<div id="form">
- <h2>Find Pages With...</h2><br>
-  
+
 <form action= "https://www.google.com/search"><br>
+  <div id="ïnputfeilds">
+    <input type="text" class="input" name="q"><br>
+    <input type="text" class="input" name="q"><br>
+    <input type="text" class="input" name="q"><br>
+    <input type="text" class="input" name="q"><br><br>
+    <input type= "submit" id ="search" value="Advanced Search">
+  </div>
+
+  <br><br><br><br><br><br><br><br>
   
-<p>all these words:</p><input type= "text" name= "q">
-  <p>this exact word or phrase:</p><input type= "text" name= "q">
-<p>a/p><input type= "text" name= "q">
-<p>all these words:</p><input type= "text" name= "q">
-  
-<br><br>
-  <input type= "submit" id ="search" value="Search">
-</form></div>
+</form>
 
 </Body>
 </Html>
+
